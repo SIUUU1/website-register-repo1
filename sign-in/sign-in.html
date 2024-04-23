@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin-top: 10%;
+      padding: 0;
+    }
+    h1 {
+      text-align: center;
+    }
+    header, section, article, footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 10px;
+    }
+    header {
+      font-size: 18px;
+    }
+    article {
+      display: flex;
+      justify-content: center;
+    }
+    a {
+      margin-left: 50px;
+    }
+    button {
+      background-color: rgb(247, 243, 243);
+      border: 1px solid lightgray;
+      border-radius: 5px;
+      margin: 3px;
+    }
+    section > button {
+      background-color:  red;
+      border-radius: 10px;
+      color: white;
+      border: none;
+      margin-left: 10px;
+      width: 75px;
+      height: 50px;
+    }
+  </style>
+</head>
+<body>
+  <h1>로그인</h1>
+  <header>
+    <input type="radio" name="member" id="member1" checked>
+    <label for="member1">회원</label>
+    <input type="radio" name="member" id="nonMember">
+    <label for="nonMember">비회원(주문조회)</label>
+  </header>
+  <section>
+    <div>
+      <input type="text" name="userId" id="userId" size="20" maxlength="20" required placeholder="아이디"> <br>
+      <input type="password" name="userId" id="userId" size="20" maxlength="20" required placeholder="비밀번호">
+    </div>
+    <button type="submit">로그인</button>
+  </section>
+  <article>
+    <input type="checkbox" name="saveId" id="saveId">
+    <label for="saveId">아이디저장</label>
+    <div>
+      <a href="#">OTP 로그인</a>
+      <button type="button">?</button>
+    </div>
+  </article>
+  <footer>
+    <button type="submit">회원가입</button>
+    <button type="submit">아이디 찾기</button>
+    <button type="submit">비밀번호 찾기</button>
+  </footer>
+</body>
+</html>
