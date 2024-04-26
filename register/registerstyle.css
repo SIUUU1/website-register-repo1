@@ -44,6 +44,7 @@ td.path {
 }
 td > span {
   font-size: 8px;
+  color: red;
 }
 input {
   border: 1px solid lightgray;
@@ -51,6 +52,7 @@ input {
   height: 20px;
   border-radius: 2px;
   background-color: #f4f4f4;
+  outline: 0;
 }
 input.request {
   background-image: url(https://cdn.discordapp.com/attachments/1212631551226150939/1230716388092678164/wrest.gif?ex=663454f4&is=6621dff4&hm=8079b04eedd0d9308fc503f5306f2bede34054958c7fa62cf223312bb979a06e&);
