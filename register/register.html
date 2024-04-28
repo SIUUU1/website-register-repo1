@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>회원가입</title>
   <link rel="stylesheet" href="registerstyle.css">
+  <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
   <script src="./register.js" defer></script>
 </head>
 <body>
@@ -15,7 +16,8 @@
       <tr>
         <td class="title"><label for="userId">아이디</label></td>
         <td class="content">
-          <input class="request" type="text" name="userId" id="userId" size="25" minlength="3" maxlength="20" onkeyup="userIdCheck()">
+          <input class="request" type="text" name="userId" id="userId" size="25" minlength="5" maxlength="20" onkeyup="userIdCheck()">
+          <button type="button" id="buttonId" onclick="noOverLap()">ID중복검색</button>
           <span id="userIdInfo"></span><br>
         </td>
       </tr>
@@ -95,14 +97,12 @@
       <tr>
         <td class="title"><label for="">주소</label></td>
         <td id="address">
-          <input class="request" type="text" name="searchAddress" id="searchAddress">
-          <button type="submit" id="buttonAddress">주소검색</button><br>
-          <input class="request" type="text" name="defaultAddress" id="defaultAddress" size="25" minlength="2" maxlength="12">
-            <label for="defaultAddress">기본주소</label><br>
-          <input type="text" name="detailedAddress" id="detailedAddress" size="25" minlength="2" maxlength="12">
-          <label for="detailedAddress">상세주소</label><br>
-          <input type="text" name="reference" id="reference" size="25" minlength="2" maxlength="12">
-          <label for="reference">참고항목</label>
+          <input class="request" type="text" name="postCode" id="postCode" placeholder="우편번호" readonly onclick="searchPostCode()" required>
+          <button type="button" id="buttonAddress" onclick="searchPostCode()">우편번호검색</button><br>
+          <input class="request" type="text" name="defaultAddress" id="defaultAddress" size="53" minlength="10" maxlength="12" placeholder="주소" readonly onclick="searchPostCode()"><br>
+          <span id="userAddressInfo"></span><br>
+          <input type="text" name="detailedAddress" id="detailedAddress" size="25" minlength="10" maxlength="12" placeholder="상세주소">
+          <input type="text" name="extraAddress" id="extraAddress" size="25" minlength="10" maxlength="12" placeholder="참고항목">
         </td>
       </tr>
     </table>
@@ -111,7 +111,7 @@
       <tr>
         <td class="title">카카오톡 메세지</td>
         <td class="allow">
-          <input type="checkbox" name="kakaoService" id="kakaoService" checked>
+          <input type="checkbox" name="kakaoService" id="kakaoService" value="1" checked>
           <label for="kakaoService">카카오톡 메세지를 받겠습니다.</label>
           <span class="redtext">>수신체크를 하시면 세일 소식을 가장 먼저 받아보실 수 있습니다.</span>
         </td>
@@ -119,14 +119,14 @@
       <tr>
         <td class="title">메일링서비스</td>
         <td class="allow">
-          <input type="checkbox" name="emailService" id="emailService" checked>
+          <input type="checkbox" name="emailService" id="emailService" value="1" checked>
           <label for="emailService">정보 메일을 받겠습니다.</label>
         </td>
       </tr>
       <tr>
         <td class="title">SNS 수신여부</td>
         <td class="allow">
-          <input type="checkbox" name="snsService" id="snsService" checked>
+          <input type="checkbox" name="snsService" id="snsService" value="1" checked>
           <label for="snsService">휴대몬 문자메세지를 받겠습니다.</label>
         </td>
       </tr>
@@ -134,7 +134,7 @@
         <td class="title">정보공개</td>
         <td>
           <div class="allow">
-            <input type="checkbox" name="disclosureInfo" id="disclosureInfo" checked>
+          <input type="checkbox" name="disclosureInfo" id="disclosureInfo" value="1" checked>
             <label for="disclosureInfo">타인이 나의 정보를 볼 수 있도록 합니다.</label>
           </div>
         </td>

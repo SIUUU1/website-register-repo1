@@ -3,34 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>KH정보교육원</title>
   <link rel="stylesheet" href="./mainstyle.css">
   <script src="./main.js" defer></script>
+  <script src="https://kit.fontawesome.com/8d66cd774b.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <!-- top -->
+  <div id="headfix">&nbsp;</div>
+    <!-- top -->
   <header>
-    <!-- left-top -->
-    <nav class="left-top">
-      <a href="#"><span>Home</span></a>
+    <!-- right-top -->
+    <nav class="right-top">
+      <a href="./khacademy-main.html"><span>Home</span></a>
       <a href="#"><span>Sitemap</span></a>
-      <a href="#"><span>로그인</span></a>
-      <a href="#"><span>회원가입</span></a>
+      <a href="../sign-in/sign-in.html" target="_self"><span>로그인</span></a>
+      <a href="../register/register.html" target="_self"><span>회원가입</span></a>
     </nav>
     <div class="head">
       <div class="left-top">
         <img src="./source/rightquick07.png">
-        <div>
+        <div id="representativeTel">
           <span>1544-9970</span><br>
           <span>전국대표문의전화(연중무휴)</span>
         </div>
       </div>
-      <h1>KH정보교육원</h1>
-      <div></div>
+      <h1><span>KH </span>정보교육원</h1>
+      <div>&nbsp;</div>
     </div>
     <!-- main-menu -->
-    <nav class="main-menu">
-      <ul>
+    <nav id="mainMenuTitle">
+      <ul onmouseover="displayMenu('mouseover')" onmouseout="displayMenu('mouseout')">
         <li>국비지원과정</li>
         <li>교육원소개</li>
         <li>취업지원센터</li>
@@ -41,9 +43,147 @@
         <li>상담센터</li>
       </ul>
     </nav>
+    <nav id="mainMenuContent" onmouseover="displayMenu('mouseover')" onmouseout="displayMenu('mouseout')">
+      <ul>
+        <a href="https://kh-academy.co.kr/edu/curriculumDetailView.kh?no=2"><li>개발자 양성과정</li></a>
+        <a href="https://kh-academy.co.kr/edu/curriculumDetailView.kh?no=1&acq=security"><li>정보보안 전문가</li></a>
+        <a href="https://kh-academy.co.kr/edu/curriculumList_kdc.kh?acq=kdc"><li>K-디지털 기초역량훈련</li></a>
+        <a href="https://kh-academy.co.kr/edu/curriculumList.kh?no=5&acq=kdt"><li>K-디지털 트레이닝</li></a>
+        <a href="https://kh-academy.co.kr/intro/edu.kh"><li>개강일정</li></a>
+        <a href="https://kh-academy.co.kr/edu/sub_2.jsp"><li>국비지원이란?</li></a>
+        <a href="https://atentsgame.com/curriculumDetail.do?no=125&acq=drawing"><li>게임 제작자 과정</li></a>
+        <a href="https://kh-fx.com/curriculum.do"><li>영상 제작자 과정</li></a>
+      </ul>
+      <ul>
+        <a href="https://kh-academy.co.kr/intro/KHoverview.kh"><li>About KH</li></a>
+        <a href="https://kh-academy.co.kr/intro/intro.kh"><li>KH-Overview</li></a>
+        <a href="https://kh-academy.co.kr/intro/history.kh"><li>걸어온길</li></a>
+        <a href="https://kh-academy.co.kr/intro/teacher.kh"><li>강사소개</li></a>
+        <a href="https://kh-academy.co.kr/work/jobSupport.kh"><li>상담선생님 소개</li></a>
+        <a href="https://kh-academy.co.kr/intro/businessAsk.kh"><li>사업 제휴 문의</li></a>
+        <a href="https://kh-academy.co.kr/intro/press.kh"><li>언론보도</li></a>
+        <a href="https://kh-academy.co.kr/intro/educationInfo.kh"><li>시설안내</li></a>
+        <a href="https://kh-academy.co.kr/intro/contact.kh"><li>오시는길</li></a>
+        <a href="https://kh-academy.co.kr/intro/trecruit.kh"><li>강사 구인</li></a>
+      </ul>
+      <ul>
+        <a href="https://kh-academy.co.kr/work/system.kh"><li>취업 프로세스</li></a>
+        <a href="https://kh-academy.co.kr/work/board.kh"><li>학사공지</li></a>
+        <a href="https://kh-academy.co.kr/work/preInterview.kh"><li>기업모의면접</li></a>
+        <a href="https://kh-academy.co.kr/work/companyLec.kh"><li>기업 초청특강</li></a>
+        <a href="https://kh-academy.co.kr/work/empl.kh"><li>취업현황</li></a>
+        <a href="https://kh-academy.co.kr/recruit/collaborate.kh"><li>협력기업</li></a>
+        <a href="https://kh-academy.co.kr/recruit/insertRecruitFrm.kh"><li>인재 채용 문의</li></a>
+      </ul>
+      <ul>
+        <a href="https://kh-academy.co.kr/project/classList.kh"><li>KH 프로젝트</li></a>
+        <a href="https://kh-academy.co.kr/project/team.kh"><li>수강생 프로젝트</li></a>
+      </ul>
+      <ul>
+        <a href="https://kh-academy.co.kr/community/notice.kh"><li>교육정보</li></a>
+        <a href="https://kh-academy.co.kr/community/interview.kh"><li>수료생 인터뷰</li></a>
+        <a href="https://kh-academy.co.kr/community/phrase.kh"><li>수강후기</li></a>
+        <a href="https://kh-academy.co.kr/community/khOn.kh"><li>KH 채널 ON</li></a>
+      </ul>
+      <ul>
+        <a href="https://kh-academy.co.kr/company/advice.kh"><li>기술자문위원</li></a>
+        <a href="https://kh-academy.co.kr/company/company.kh"><li>실무자인터뷰</li></a>
+        <a href="https://kh-academy.co.kr/company/industrialEdu.kh"><li>산학협력</li></a>
+        <a href="https://kh-academy.co.kr/company/itSpecialLecture.kh"><li>IT특강</li></a>
+      </ul>
+      <ul>
+        <a href="../sign-in/sign-in.html"><li>로그인</li></a>
+        <a href="../register/register.html"><li>회원가입</li></a>
+        <a href="https://kh-academy.co.kr/login/find.kh"><li>아이디/비밀번호 찾기</li></a>
+        <a href="https://kh-academy.co.kr/login/survey.kh"><li>학생설문조사</li></a>
+      </ul>
+      <ul>
+        <a href="https://kh-academy.co.kr/question/online.kh?location=h"><li>온라인 상담</li></a>
+        <a href="https://kh-academy.co.kr/question/simple.kh?location=h"><li>국비대상자 간편조회</li></a>
+        <a href="https://kh-academy.co.kr/question/visit.kh?location=h"><li>방문상담 예약</li></a>
+        <a href="https://kh-academy.co.kr/question/register.kh?location=h"><li>온라인 수강신청</li></a>
+        <a href="https://kh-academy.co.kr/question/faq.kh"><li>FAQ</li></a>
+      </ul>
+    </nav>
   </header>
   <!-- middle -->
-  <section>section</section>
+  <section>
+    <article>section</article>
+    <article class="article2">
+      <h2>교육과정</h2>
+      <p class="subtitle">KH정보교육원마의 독보적인 커리큘럼을 만나보세요.</p>
+      <div class="article2-content">
+        <div class="content1">
+          <p class="content-engtitle1">Class Schedule</p>
+          <p class="content-kortitle1">전제 개강일정</p>
+          <p class="content-description1">
+            IT, 게임제작, 영상제작 과정의 <br>
+            개강일정을 보실 수 있습니다.
+          </p>
+        </div>
+        <div class="content6">
+          <div>
+            <p class="content-engtitle1">java Developers</p>
+            <p class="content-kortitle1">S/W 개발자 과정</p>
+            <p class="content-description1">
+              개발자 취업을 위한 필수 지식과 <br> 
+              기술을 이론과 실습을 통해 습득하는 <br>
+              과정입니다.
+            </p>
+          </div>
+          <div>
+            <p class="content-engtitle">K-Digital Training</p>
+            <p class="content-kortitle">IaC기반 CDC엔지니어</p>
+            <p class="content-description">
+              실무 기반 프로젝트를 수행하고, <br>
+              고급 프로그래밍 기술과 문제해결 <br>
+              능력을 습득하는 과정입니다. <br><br>
+              <div class="i-style"><i class="fa-solid fa-lock"></i></div>
+            </p>
+          </div>
+          <div>
+            <p class="content-engtitle">K-디지털 기초역량훈련(KDC)</p>
+            <p class="content-kortitle">C언어 핵심 요점 정리</p>
+            <p class="content-description"> 
+              언제 어디서든 업무와 훈련을 <br>
+              병행할 수 있도록 100%원격으로 <br>
+              운영됩니다. <br><br>
+              <div class="i-style"><i class="fa-solid fa-gear"></i></div>
+            </p>
+          </div>
+          <div>
+            <p class="content-engtitle">아텐츠게임아카데미</p>
+            <p class="content-kortitle">게임 제작자 과정</p>
+            <p class="content-description">
+              기초부터 포트폴리오까지 한걸음씩 <br>
+              성장하는 재미를 느낄 수 있는 <br>
+              게임 제작자 과정입니다. <br><br>
+              <div class="i-style"><i class="fa-solid fa-globe"></i></div>
+            </p>
+          </div>
+          <div>
+            <p class="content-engtitle">KH영상아카데미</p>
+            <p class="content-kortitle">영상 제작자 과정</p>
+            <p class="content-description">
+              기초부터 심화까지, <br>
+              누구나 배울수 있는 개인 맞춤형 <br>
+              실무 교육을 제공합니다. <br><br>
+              <div class="i-style"><i class="fa-brands fa-youtube"></i></div>
+            </p>
+          </div>
+          <div>
+            <p class="content-engtitle1">Information Security</p>
+            <p class="content-kortitle1">정보보안 전문자</p>
+            <p class="content-description1">
+              현엽에서 필요로한 기초 지식, <br>
+              대응 실력을 이론 수업과 프로젝트 <br>
+              실습을 통해 습득하는 과정입니다.
+            </p>
+          </div>
+        </div>
+      </div>  
+    </article>
+  </section>
   <!-- bottom -->
   <footer>
     <div class="bottom1">
