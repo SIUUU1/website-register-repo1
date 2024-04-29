@@ -16,7 +16,8 @@ body {
 }
 section iframe {
   width: 100%;
-  height: 900px;
+  height: 850px;
+  /* margin-top: 20px; */
 }
 a {
   text-decoration: none;
@@ -30,7 +31,7 @@ ul {
 /* top */
 #headfix {
   width: 100%;
-  height: 160px;
+  height: 170px;
   background-color: white;
 }
 header {
@@ -39,6 +40,7 @@ header {
   position: fixed;
   top: 0px;
   background-color: white;
+  z-index: 1;
 }
 h1 > span {
   color: rgb(62, 62, 222);
@@ -131,7 +133,7 @@ section {
 }
 section > article:first-child {
   margin: 0 auto;
-  width: 80%;
+  width: 100%;
   height: 450px;
   background-color: #0c3791;
   color: white;

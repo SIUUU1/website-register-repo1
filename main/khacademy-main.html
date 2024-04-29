@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>KH정보교육원</title>
   <link rel="stylesheet" href="./mainstyle.css">
+  <link rel="stylesheet" href="./slideshow/slideshowstyle.css">
   <script src="./main.js" defer></script>
   <script src="https://kit.fontawesome.com/8d66cd774b.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body onload="call_js()">
   <div id="headfix">&nbsp;</div>
     <!-- top -->
   <header>
@@ -108,8 +109,30 @@
   </header>
   <!-- middle -->
   <section>
-    <article>section</article>
-    <iframe src="./main-bottom.html" frameborder="0" name="mainBottom" id="mainBottom" scrolling="no">
+    <!-- sildshow -->
+    <article>
+
+      <div class="sildshow">
+        <div class="slidshow_imgs">
+          <a href="#"><img src="./source/computer1.jpg" alt="slide1"></a>
+          <a href="#"><img src="./source/computer2.jpg" alt="slide2"></a>
+          <a href="#"><img src="./source/computer3.jpg" alt="slide3"></a>
+          <a href="#"><img src="./source/computer4.jpg" alt="slide4"></a>
+        </div>
+        <div class="slidshow_nav">
+          <a href="#" id="prev"><i class="fa-solid fa-angles-left"></i></a>
+          <a href="#" id="next"><i class="fa-solid fa-angles-right"></i></a>
+        </div>
+        <div class="indicator">
+          <a href="#" class="active"><i class="fa-solid fa-circle"></i></a>
+          <a href="#"><i class="fa-solid fa-circle"></i></a>
+          <a href="#"><i class="fa-solid fa-circle"></i></a>
+          <a href="#"><i class="fa-solid fa-circle"></i></a>
+        </div>
+      </div>
+
+    </article>
+    <iframe src="./main-bottom/main-bottom.html" frameborder="0" name="mainBottom" id="mainBottom" scrolling="no">
       leftframe.html 지원이 안됩니다.
     </iframe>
   </section>

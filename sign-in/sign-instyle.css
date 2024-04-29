@@ -1,5 +1,5 @@
 body {
-  margin: 13% auto;
+  margin: 10% auto;
   padding: 0;
   height: 600px;
   background-image: url(../main/source/monitor-1307227_1920.jpg);
@@ -18,8 +18,9 @@ h1 {
 }
 #back {
   background-color: white;
-  width: 600px;
-  height: 400px;
+  opacity: 0.96;
+  width: 550px;
+  height: 420px;
   margin: 0 auto;
   padding: 50px 0;
   border-radius: 50px;
@@ -47,6 +48,9 @@ div.middle-top input {
 /* middle-bottom */
 div.middle-bottom {
 justify-content: space-between;
+}
+div.bottom {
+  justify-content: space-between;
 }
 /* button */
 button {
