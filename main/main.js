@@ -2,7 +2,6 @@
 //메인 메뉴에 마우스 다른 곳에 둘 때 메뉴 접기
 function displayMenu(state) {
   const mainMenuContent = document.querySelector("#mainMenuContent");
-  const mainMenuTitle = document.querySelector("#mainMenuTitle");
   switch(state){
     case "mouseover": 
       mainMenuContent.style.display = `flex`;
@@ -12,4 +11,12 @@ function displayMenu(state) {
         break;
     default: break;
   }
+}
+//로그인 메뉴 클릭하면 article2에 로그인 창 띄우기
+function openSignInPage(){
+  document.getElementById("mainBottom").src="../sign-in/sign-in.html";
+}
+//회원가입 메뉴 클릭하면 article2에 로그인 창 띄우기
+function openRegisterPage() {
+  document.getElementById("mainBottom").src = "../register/register.html";
 }

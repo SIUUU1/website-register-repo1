@@ -19,7 +19,7 @@ function noOverLap() {
   const userId = document.querySelector("#userId");
   const userIdInfo = document.querySelector("#userIdInfo");
   userIdInfo.innerHTML = `사용가능한 아이디 입니다.`;
-  userIdInfo.style.color = `green`;
+  userIdInfo.style.color = `black`;
     return true;
 }
 //비밀번호 입력할 때마다 점검
@@ -153,7 +153,7 @@ function searchPostCode() {
         addr = data.jibunAddress;
       }
 
-      //사용자가 선택한 주소가 도로명 타입일때  참고항목을 조합한다.
+      //사용자가 선택한 주소가 도로명 타입일때 참고항목을 조합한다.
       if(data.userSelectedType === `R`){
         //법정동명이 있을 경우 추가한다.(법정리는 제외)
         //법정동의 경우 마지막 문자가 "동/로/가"로 끝난다.
@@ -202,7 +202,8 @@ function codeConfirm() {
     return false;
   } else {
     if (autoRegiCode.innerHTML === autoRegiPrevention.value) {
-      autoRegiPreventionInfo.innerHTML = ``;
+      autoRegiPreventionInfo.innerHTML = `인증완료`;
+      autoRegiPreventionInfo.style.color = `black`;
       return true;
     } else {
       autoRegiPreventionInfo.innerHTML = `자동등록방지 문자와 숫자를 순서대로 입력해 주세요.`;
@@ -220,6 +221,9 @@ function allCheck(event) {
   const userTel = document.querySelector("#userTel");
   const userPhoneNum = document.querySelector("#userPhoneNum");
   const userBirthday = document.querySelector("#userBirthday");
+  const defaultAddress = document.querySelector("#defaultAddress");
+  const detailedAddress = document.querySelector("#detailedAddress");
+  const extraAddress = document.querySelector("#extraAddress");
   if (
     userIdCheck() &&
     userPwCheck("keyup") &&
@@ -229,7 +233,8 @@ function allCheck(event) {
     userEmailCheck() &&
     userTelCheck() &&
     userPhoneNumCheck() &&
-    codeConfirm()
+    codeConfirm() &&
+    defaultAddress.value !== ``
   ) {
     alert(`
     이름 : ${userName.value}
@@ -238,12 +243,13 @@ function allCheck(event) {
     E-mail : ${userEmail.value}
     전화번호 : ${userTel.value}
     휴대폰번호 : ${userPhoneNum.value}
-    생년월일 : ${userBirthday.value} \n\n
+    생년월일 : ${userBirthday.value} 
+    주소 : ${defaultAddress.value} ${detailedAddress.value} ${extraAddress.value} \n\n
     가입내용을 성공적으로 입력하셨습니다.
     `);
     return true;
   } else {
-    alert("가입내용을 잘못 입력하셨습니다.");
+    alert("가입내용을 올바르게 입력하세요.");
     event.preventDefault();
   }
 }

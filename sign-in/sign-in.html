@@ -8,40 +8,46 @@
   <link rel="stylesheet" href="./sign-instyle.css">
 </head>
 <body>
-  <h1>로그인</h1>
-  <form action="#" method="post" onsubmit="return false">
-    <div class="top">
-      <div>
-        <input type="radio" name="member" id="member1" value="1" checked>
-        <label for="member1">회원</label>
+  <div id="back">
+    <!-- top -->
+    <h1>로그인</h1>
+    <form action="#" method="post" onsubmit="return false">
+      <div class="top">
+        <div>
+          <input type="radio" name="member" id="member1" value="1" checked>
+          <label for="member1">회원</label>
+        </div>
+        <div>
+          <input type="radio" name="member" id="nonMember" value="2">
+          <label for="nonMember">비회원(주문조회)</label>
+        </div>
       </div>
-      <div>
-        <input type="radio" name="member" id="nonMember" value="2">
-        <label for="nonMember">비회원(주문조회)</label>
+      <!-- middle-top -->
+      <div class="middle-top">
+        <div>
+          <input type="text" name="userId" id="userId" size="20" minlength="5" maxlength="20" placeholder="아이디"> <br>
+          <input type="password" name="userPw" id="userPw" size="20" minlength="8" maxlength="16" placeholder="비밀번호">
+        </div>
+        <button type="submit" onclick="allCheck(event)">로그인</button>
       </div>
-    </div>
-    <div class="middle-top">
-      <div>
-        <input type="text" name="userId" id="userId" size="20" minlength="5" maxlength="20" placeholder="아이디"> <br>
-        <input type="password" name="userPw" id="userPw" size="20" minlength="8" maxlength="16" placeholder="비밀번호">
+      <!-- middle-bottom -->
+      <div class="middle-bottom">
+        <div>
+          <input type="checkbox" name="saveId" id="saveId" value="1">
+          <label for="saveId">아이디저장</label>
+        </div>
+        <div>
+          <a href="#">OTP 로그인</a>
+          <button type="button" id="question-button">?</button>
+        </div>
       </div>
-      <button type="submit" onclick="allCheck(event)">로그인</button>
-    </div>
-    <div class="middle-bottom">
-      <div>
-        <input type="checkbox" name="saveId" id="saveId" value="1">
-        <label for="saveId">아이디저장</label>
+      <!-- bottom -->
+      <div class="bottom">
+        <a href="../register/register.html" target="_blank"><button type="button">회원가입</button></a>
+        <a href="https://kh-academy.co.kr/login/find.kh"><button type="button">아이디 찾기</button></a>
+        <a href="https://www.kh-academy.co.kr/login/password.kh"><button type="button">비밀번호 찾기</button></a>
       </div>
-      <div>
-        <a href="#">OTP 로그인</a>
-        <button type="button" id="question-button">?</button>
-      </div>
-    </div>
-    <div class="bottom">
-      <a href="../register/register.html" target="_blank"><button type="button">회원가입</button></a>
-      <a href="https://kh-academy.co.kr/login/find.kh"><button type="button">아이디 찾기</button></a>
-      <a href="https://www.kh-academy.co.kr/login/password.kh"><button type="button">비밀번호 찾기</button></a>
-    </div>
-  </form>
+    </form>
+  </div>
 </body>
 </html>

@@ -14,6 +14,10 @@ body {
   margin: 0 auto;
   color: black;
 }
+section iframe {
+  width: 100%;
+  height: 900px;
+}
 a {
   text-decoration: none;
   color: black;
@@ -122,97 +126,15 @@ header > #mainMenuContent > ul li:hover {
   color: red;
 }
 /* middle */
+section {
+  height: 50%;
+}
 section > article:first-child {
   margin: 0 auto;
   width: 80%;
   height: 450px;
   background-color: #0c3791;
   color: white;
-}
-h2 {
-  text-align: center;
-  font-size: 30px;
-  margin: 30px 0 0 0;
-}
-article.article2 > p.subtitle {
-  text-align: center;
-  margin: 0 auto;
-}
-article.article2 {
-  margin: 0 auto;
-  width: 80%;
-  height: 600px;
-}
-div.article2-content {
-  width: 100%;
-  margin-top: 20px;
-  height: 80%;
-  display: flex;
-  margin-bottom: 10px;
-}
-div.article2-content > div.content1 {
-  width: 25%;
-  height: 90%;
-  border: 1px solid rgb(218, 217, 217);
-  padding: 7px;
-  margin: 13px 0;
-  background-image: url(./source/monitor-1307227_1920.jpg);
-}
-div.article2-content > div.content6 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  font-size: 14px;
-}
-div.article2-content > div.content6 > div {
-  width: 28%;
-  height: 40%;
-  margin: 10px;
-  border: 1px solid rgb(218, 217, 217);
-  padding: 10px;
-}
-div.article2-content > div.content6 > div:first-child {
-  background-image: url(./source/monitor-1307227_1920.jpg);
-}
-div.article2-content > div.content6 > div:last-child {
-  background-image: url(./source/monitor-1307227_1920.jpg);
-}
-p.content-engtitle1 {
-  color: aqua;
-}
-p.content-kortitle1 {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: white;
-}
-p.content-description1 {
-  font-size: 15px;
-  color: white;
-
-}
-p.content-engtitle {
-  color: #115de6;
-}
-p.content-kortitle {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-p.content-description {
-  font-size: 15px;
-  color: rgb(33, 33, 33);
-}
-div.article2-content > div.content6 i {
-  font-size: 40px;
-  color: #2d5ae9;
-  text-align:center;
-}
-div.i-style {
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 20px;
 }
 /* bottom */
 footer {

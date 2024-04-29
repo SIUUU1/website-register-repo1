@@ -1,26 +1,41 @@
 body {
   margin: 13% auto;
   padding: 0;
+  height: 600px;
+  background-image: url(../main/source/monitor-1307227_1920.jpg);
 }
 div {
   margin: 0;
   padding: 0;
 }
+a {
+  color: black;
+}
+/* top */
 h1 {
   text-align: center;
   margin-bottom: 30px;
+}
+#back {
+  background-color: white;
+  width: 600px;
+  height: 400px;
+  margin: 0 auto;
+  padding: 50px 0;
+  border-radius: 50px;
 }
 div.top, div.middle-top, div.middle-bottom, div.bottom {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px auto;
+  margin: 15px auto;
   width: 400px;
 }
 div.top {
   font-size: 18px;
   justify-content: space-between;
 }
+/* middle-top */
 div.middle-top input {
   margin: 3px 0;
   height: 45px;
@@ -29,18 +44,17 @@ div.middle-top input {
   border: 1px solid  rgb(218, 217, 217);
   outline: 0;
 }
+/* middle-bottom */
 div.middle-bottom {
 justify-content: space-between;
 }
-a {
-  color: black;
-}
+/* button */
 button {
   background-color: rgb(247, 243, 243);
   border: 1px solid lightgray;
   border-radius: 5px;
   margin: 3px 10px;
-  width: 90px;
+  width: 100px;
   height: 25px;
 }
 #question-button {
