@@ -8,15 +8,15 @@
   <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
   <script src="./register.js" defer></script>
 </head>
-<body>
+<body onload="init()">
   <h1>회원가입</h1>
-  <form action="#" method="post" onsubmit="return false">
+  <form action="#" method="post">
     <h4>사이트 이용정보 입력</h4>
     <table>
       <tr>
         <td class="title"><label for="userId">아이디</label></td>
         <td class="content">
-          <input class="request" type="text" name="userId" id="userId" size="25" minlength="5" maxlength="20" onkeyup="userIdCheck()">
+          <input class="request" type="text" name="userId" id="userId" size="25" minlength="5" maxlength="20" onkeyup="userIdCheck()" onkeypress="">
           <button type="button" id="buttonId" onclick="noOverLap()">ID중복검색</button>
           <span id="userIdInfo"></span><br>
         </td>

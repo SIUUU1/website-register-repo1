@@ -13,10 +13,16 @@ function displayMenu(state) {
   }
 }
 //로그인 메뉴 클릭하면 article2에 로그인 창 띄우기
-function openSignInPage(){
-  document.getElementById("mainBottom").src="../sign-in/sign-in.html";
+function openSignInPage(e){
+  e.preventDefault();
+  document.getElementById("mainBottom").src = "../sign-in/sign-in.html";
 }
 //회원가입 메뉴 클릭하면 article2에 로그인 창 띄우기
-function openRegisterPage() {
+function openRegisterPage(e) {
+  e.preventDefault();
   document.getElementById("mainBottom").src = "../register/register.html";
+}
+function openBoardPage(e){
+  e.preventDefault();
+  document.getElementById("mainBottom").src = "../board/board.html";
 }

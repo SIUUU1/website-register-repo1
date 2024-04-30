@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="./mainstyle.css">
   <link rel="stylesheet" href="./slideshow/slideshowstyle.css">
   <script src="./main.js" defer></script>
+  <script src="./slideshow/slideshow.js"></script>
   <script src="https://kit.fontawesome.com/8d66cd774b.js" crossorigin="anonymous"></script>
 </head>
 <body onload="call_js()">
@@ -17,18 +18,19 @@
     <nav class="right-top">
       <a href="./khacademy-main.html"><span>Home</span></a>
       <a href="https://kh-academy.co.kr/intro/history.kh"><span>Sitemap</span></a>
-      <a href="#" onclick="openSignInPage()"><span>로그인</span></a>
-      <a href="#" onclick="openRegisterPage()"><span>회원가입</span></a>
+      <a href="#" onclick="openSignInPage(event)"><span>로그인</span></a>
+      <a href="#" onclick="openRegisterPage(event)"><span>회원가입</span></a>
     </nav>
     <div class="head">
-      <div class="left-top">
-        <img src="./source/rightquick07.png">
-        <div id="representativeTel">
-          <span>1544-9970</span><br>
-          <span>전국대표문의전화(연중무휴)</span>
+      <!-- left-top -->
+      <div class="call">
+        <a href="https://kh-academy.co.kr/question/online.kh?location=h"><img src="./source/rightquick07.png"></a>
+        <div class="representativeTel">
+          <a href="https://kh-academy.co.kr/question/online.kh?location=h"><span>1544-9970</span></a><br>
+          <a href="https://kh-academy.co.kr/question/online.kh?location=h"><span>전국대표문의전화(연중무휴)</span></a>
         </div>
       </div>
-      <h1><span>KH </span>정보교육원</h1>
+      <h1><a href="./khacademy-main.html"><span>KH </span>정보교육원</a></h1>
       <div>&nbsp;</div>
     </div>
     <!-- main-menu -->
@@ -69,7 +71,7 @@
       </ul>
       <ul>
         <a href="https://kh-academy.co.kr/work/system.kh"><li>취업 프로세스</li></a>
-        <a href="https://kh-academy.co.kr/work/board.kh"><li>학사공지</li></a>
+        <a href="#"><li onclick="openBoardPage(event)">학사공지</li></a>
         <a href="https://kh-academy.co.kr/work/preInterview.kh"><li>기업모의면접</li></a>
         <a href="https://kh-academy.co.kr/work/companyLec.kh"><li>기업 초청특강</li></a>
         <a href="https://kh-academy.co.kr/work/empl.kh"><li>취업현황</li></a>
@@ -93,8 +95,8 @@
         <a href="https://kh-academy.co.kr/company/itSpecialLecture.kh"><li>IT특강</li></a>
       </ul>
       <ul>
-        <a href="#"><li onclick="openSignInPage()">로그인</li></a>
-        <a href="#"><li onclick=" openRegisterPage()">회원가입</li></a>
+        <a href="#"><li onclick="openSignInPage(event)">로그인</li></a>
+        <a href="#"><li onclick=" openRegisterPage(event)">회원가입</li></a>
         <a href="https://kh-academy.co.kr/login/find.kh"><li>아이디/비밀번호 찾기</li></a>
         <a href="https://kh-academy.co.kr/login/survey.kh"><li>학생설문조사</li></a>
       </ul>
@@ -111,7 +113,6 @@
   <section>
     <!-- sildshow -->
     <article>
-
       <div class="sildshow">
         <div class="slidshow_imgs">
           <a href="#"><img src="./source/computer1.jpg" alt="slide1"></a>
@@ -130,10 +131,25 @@
           <a href="#"><i class="fa-solid fa-circle"></i></a>
         </div>
       </div>
-
+    </article>
+    <!-- slideshow-bottom -->
+    <article class="slideshow-bottom">
+      <div><a href=""><img src="./source/icon1.PNG"><br><span>온라인 상담</span></a></div>
+      <div><a href=""><img src="./source/icon2.PNG"><br><span>국비대상자조회</span></a></div>
+      <div><a href=""><img src="./source/icon3.PNG"><br><span>방문상담 예약</span></a></div>
+      <div><a href=""><img src="./source/icon4.PNG"><br><span>카카오 상담</span></a></div>
+      <div class="call">
+        <div id="call-icon">
+          <a href="https://kh-academy.co.kr/question/online.kh?location=h"><img src="./source/rightquick07.png"></a>
+        </div>
+        <div class="representativeTel">
+          <a href="https://kh-academy.co.kr/question/online.kh?location=h"><span>1544-9970</span></a><br>
+          <a href="https://kh-academy.co.kr/question/online.kh?location=h"><span>전국대표문의전화(연중무휴)</span></a>
+        </div>
+      </div>
     </article>
     <iframe src="./main-bottom/main-bottom.html" frameborder="0" name="mainBottom" id="mainBottom" scrolling="no">
-      leftframe.html 지원이 안됩니다.
+      main-bottom.html 지원이 안됩니다.
     </iframe>
   </section>
   <!-- bottom -->

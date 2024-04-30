@@ -75,7 +75,7 @@ input.request {
 footer {
   display: flex;
   justify-content: center;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 #subButton {
   background-color: rgb(89, 159, 234);

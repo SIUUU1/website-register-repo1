@@ -1,3 +1,11 @@
+//body onload할 때 
+//body onload 아이디에 focus.스크롤을 위치시킨다.
+function init(){
+  let userId = document.querySelector("#userId");
+  userId.focus();
+  window.scrollBy(0,200);
+}
+
 //아이디 입력할 때마다 점검
 function userIdCheck() {
   const userId = document.querySelector("#userId");
