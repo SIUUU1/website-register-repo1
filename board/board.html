@@ -3,190 +3,287 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>게시판</title>
-  <script>
-    function init(){
-      // h1
-      let newH1 = document.createElement("h1");
-      newH1.innerHTML = `학사공지`;
-      newH1.style.textAlign = `center`;
-      newH1.style.margin = `40px auto`;
-      document.body.append(newH1);
-      // h3
-      let newH3 = document.createElement("h3");
-      newH3.innerHTML = `KH정보교육원의 학사관련 공지입니다.`;
-      newH3.style.textAlign = `center`;
-      newH3.style.margin = `10px auto`;
-      newH3.style.fontSize = `17px`;
-      document.body.append(newH3);
-      // table
-      let newTable = document.createElement("table");
-      newTable.style.textAlign = `center`;
-      newTable.style.margin = `0px auto`;
-      newTable.style.fontSize = `15px`;
-      newTable.style.width = `1200px`;
-      newTable.style.borderCollapse = `collapse`;
-      document.body.append(newTable);
-      // tr1
-      const table = document.querySelector("table");
-      let newTr1 = document.createElement("tr");
-      newTr1.style.padding = `10px`;
-      newTr1.style.border = `1px solid rgb(218, 217, 217)`;
-      newTr1.setAttribute("id","tr1");
-      table.append(newTr1);
-      // tr1-td
-      const tr1 = document.querySelector("#tr1");
-      let newTd1 = document.createElement("td");
-      newTd1.style.padding = `10px`;
-      newTd1.style.border = `1px solid rgb(218, 217, 217)`;
-      newTd1.setAttribute("id", "tr1");
-      tr1.append(newTd1);
-      let newTd2 = document.createElement("td");
-      newTd2.style.padding = `10px`;
-      newTd2.style.border = `1px solid rgb(218, 217, 217)`;
-      newTd2.setAttribute("id", "tr1");
-      tr1.append(newTd2);
-      let newTd3 = document.createElement("td");
-      newTd3.style.padding = `10px`;
-      newTd3.style.border = `1px solid rgb(218, 217, 217)`;
-      newTd3.setAttribute("id", "tr1");
-      tr1.append(newTd3);
-      let newTd4 = document.createElement("td");
-      newTd4.style.padding = `10px`;
-      newTd4.style.border = `1px solid rgb(218, 217, 217)`;
-      newTd4.setAttribute("id", "tr1");
-      tr1.append(newTd4);
-
-      
-      // tr2
-      let newTr2 = document.createElement("tr");
-      newTr2.style.padding = `10px`;
-      newTr2.style.border = `1px solid rgb(218, 217, 217)`;
-      newTr2.setAttribute("id", "tr2");
-      table.append(newTr2);
-      // tr2-td
-      // const tr1 = document.querySelector("#tr1");
-      // let newTd1 = document.createElement("td");
-      // newTd1.style.padding = `10px`;
-      // newTd1.style.border = `1px solid rgb(218, 217, 217)`;
-      // newTd1.setAttribute("id", "tr1");
-      // tr1.append(newTd1);
-      // let newTd2 = document.createElement("td");
-      // newTd2.style.padding = `10px`;
-      // newTd2.style.border = `1px solid rgb(218, 217, 217)`;
-      // newTd2.setAttribute("id", "tr1");
-      // tr1.append(newTd2);
-      // let newTd3 = document.createElement("td");
-      // newTd3.style.padding = `10px`;
-      // newTd3.style.border = `1px solid rgb(218, 217, 217)`;
-      // newTd3.setAttribute("id", "tr1");
-      // tr1.append(newTd3);
-      // let newTd4 = document.createElement("td");
-      // newTd4.style.padding = `10px`;
-      // newTd4.style.border = `1px solid rgb(218, 217, 217)`;
-      // newTd4.setAttribute("id", "tr1");
-      // tr1.append(newTd4);
-
-      let newTr3 = document.createElement("tr");
-      newTr3.style.padding = `10px`;
-      newTr3.style.border = `1px solid rgb(218, 217, 217)`;
-      newTr3.setAttribute("id", "tr3");
-      table.append(newTr3);
-      let newTr4 = document.createElement("tr");
-      newTr4.style.padding = `10px`;
-      newTr4.style.border = `1px solid rgb(218, 217, 217)`;
-      newTr4.setAttribute("id", "tr4");
-      table.append(newTr4);
-      let newTr5 = document.createElement("tr");
-      newTr5.style.padding = `10px`;
-      newTr5.style.border = `1px solid rgb(218, 217, 217)`;
-      newTr5.setAttribute("id", "tr5");
-      table.append(newTr5);
-      let newTr6 = document.createElement("tr");
-      newTr6.style.padding = `10px`;
-      newTr6.style.border = `1px solid rgb(218, 217, 217)`;
-      newTr6.setAttribute("id", "tr6");
-      table.append(newTr6);
-      let newTr7 = document.createElement("tr");
-      newTr7.style.padding = `10px`;
-      newTr7.style.border = `1px solid rgb(218, 217, 217)`;
-      newTr7.setAttribute("id", "tr7");
-      table.append(newTr7);
-      let newTr8 = document.createElement("tr");
-      newTr8.style.padding = `10px`;
-      newTr8.style.border = `1px solid rgb(218, 217, 217)`;
-      newTr8.setAttribute("id", "tr8");
-      table.append(newTr8);
-      let newTr9 = document.createElement("tr");
-      newTr9.style.padding = `10px`;
-      newTr9.style.border = `1px solid rgb(218, 217, 217)`;
-      table.append(newTr9);
-      let newTr10 = document.createElement("tr");
-      newTr10.style.padding = `10px`;
-      newTr10.style.border = `1px solid rgb(218, 217, 217)`;
-      table.append(newTr10);
-
-      // document.body.innerHTML= `
-        
-      //   <h3>KH정보교육원의 학사관련 공지입니다.</h3>
-
-      //   <table>
-      //     <thead>
-      //       <tr><td>번호</td><td>분류</td><td>제목</td><td>날짜</td></tr>
-      //     </thead>
-      //     <tr><td>2346</td><td>프로젝트</td><td>제목</td><td>2024.04.22</td></tr>
-      //     <tr><td>2345</td><td>기타</td><td>제목</td><td>2024.04.22</td></tr>
-      //     <tr><td>2344</td><td>기타</td><td>제목</td><td>2024.03.25</td></tr>
-      //     <tr><td>2343</td><td>기타</td><td>제목</td><td>2024.03.04</td></tr>
-      //     <tr><td>2342</td><td>개강OT</td><td>제목</td><td>2024.02.20</td></tr>
-      //     <tr><td>2341</td><td>개강OT</td><td>제목</td><td>2024.02.04</td></tr>
-      //     <tr><td>2340</td><td>개강OT</td><td>제목</td><td>2024.01.26</td></tr>
-      //     <tr><td>2339</td><td>개강OT</td><td>제목</td><td>2024.01.16</td></tr>
-      //     <tr><td>2338</td><td>취업특강</td><td>제목</td><td>2024.01.08</td></tr>
-      //     <tr><td>2337</td><td>취업특강</td><td>제목</td><td>2024.01.04</td></tr>
-      //   </table>
-      
-      
-      // `;
-    }
-  </script>
-  <!-- <style>
-    h1, h3 {
-      text-align: center;
-      margin: 0;
-      padding: 0;
-    }
-    h1 {
-      margin-top: 40px;
-    }
-    h3 {
-      font-size: 17px;
-      margin-bottom: 20px;
-    }
-    table {
-      border-collapse: collapse;
-      margin: 0 auto;
-      width: 1200px;
-      text-align: center;
-    }
-    tr, td {
-      border: 1px solid rgb(218, 217, 217);
-      padding: 10px;
-    }
-    thead {
-      background-color: #f2f5f9;
-    }
-  </style> -->
+  <title>학사공지</title>
+  <script src="https://kit.fontawesome.com/8d66cd774b.js" crossorigin="anonymous"></script>
 </head>
-<body onload="init()">
-  <!-- <table>
-    <thead></thead>
-  </table>
-  <select name="category" id="category">
-    <option value="category1">전체</option>
-    <option value="category2">개강OT</option>
-    <option value="category3">취업특강</option>
-    <option value="category4">기타</option>
-  </select> -->
+<body>
+  <script>
+    //h1, h3, select 생성
+    document.write(`
+    <h1>학사공지</h1>
+    <h3>KH정보교육원의 학사관련 공지입니다.</h3>
+      <div>
+      <select name="category" id="category">
+        <option value="전체">전체</option>
+        <option value="기타">기타</option>
+        <option value="개강OT">개강OT</option>
+        <option value="취업특강">취업특강</option>`
+    );
+    //body 스타일
+    document.body.style.margin = `0`;
+    document.body.style.padding = `0`;
+    document.body.style.width = `100%`;
+    document.body.style.height = `850px`;
+    //h1 스타일
+    let h1 = document.querySelector("h1");
+    h1.style.textAlign = `center`;
+    h1.style.margin = `90px 0 0 0`;
+    h1.style.padding = `0`;
+    //h3 스타일
+    let h3 = document.querySelector("h3");
+    h3.style.textAlign = `center`;
+    h3.style.margin = `10px 0 30px 0`;
+    h3.style.padding = `0`;
+    h3.style.fontSize = `17px`;
+    // table 생성
+    document.write(`    
+      </select>
+      </div>
+        <table>
+          <thead>
+            <tr><td>번호</td><td>분류</td><td>제목</td><td>날짜</td></tr>
+          </thead>`
+    );
+    for(let i=0;i<10;i++){
+      document.write(`<tr><td>${2346-i}</td><td>프로젝트</td><td>(디지털컨버전스)공공데이터 융합 자바개발자 양성과정A30_프로젝트 발표</td><td>2024.05.${15-i}</td></tr>`);
+    }
+    document.write(`</table>`);
+    //table 스타일
+    let table = document.querySelector("table");
+    table.style.width = `80%`;
+    table.style.margin = `50px auto`;
+    table.style.textAlign = `center`;
+    table.style.borderCollapse = `collapse`;
+    table.style.fontSize = `13px`;
+    table.setAttribute("id","table1");
+    //tr,td 스타일
+    let trArr = document.querySelectorAll("tr");
+    for(let i=0;i<trArr.length;i++){
+      trArr[i].style.border = `1px solid rgb(218, 217, 217)`;
+      trArr[i].style.padding = `10px`;
+      trArr[i].setAttribute("id",`tr1${i}`);
+    }
+    let tdArr = document.querySelectorAll("td");
+    for(let i=0;i<tdArr.length;i++){
+      tdArr[i].style.border = `1px solid rgb(218, 217, 217)`;
+      tdArr[i].style.padding = `10px`;
+    }
+    //thead 스타일
+    let thead = document.querySelector("thead");
+    thead.style.backgroundColor = `rgb(192, 219, 248)`;
+    // select박스 스타일
+    let select = document.querySelector("select");
+    select.style.width = `100px`;
+    select.style.height = `30px`;
+    select.style.fontSize = `15px`;
+    select.style.textAlign = `center`;
+    let selectDiv = document.querySelector("div");
+    selectDiv.style.width = `80%`;
+    selectDiv.style.margin = `0 auto`;
+    selectDiv.style.textAlign = `right`;
+    // button 생성
+    document.write(`<footer>`);
+    document.write(`<button type="button"><i class="fa-solid fa-chevron-left"></i></button>`);
+    for(let i=0;i<10;i++){
+      document.write(`<button type="button">${i+1}</button>`);
+    }
+    document.write(`<button type="button"><i class="fa-solid fa-chevron-right"></i></button>`);
+    document.write(`</footer>`);
+    let footer = document.querySelector("footer");
+    footer.style.margin = `0 auto`;
+    footer.style.width = `80%`;
+    footer.style.textAlign = `center`;
+    footer.setAttribute("id","footer");
+    // button 스타일
+    let buttonArr = document.querySelectorAll("button");
+    for(let i=0;i<buttonArr.length;i++){
+      buttonArr[i].style.margin = `0 8px`;
+      buttonArr[i].style.backgroundColor = `white`;
+      buttonArr[i].style.borderStyle = `none`;
+      buttonArr[i].style.border = `1px solid rgb(218, 217, 217)`;
+      buttonArr[i].style.width = `35px`;
+      buttonArr[i].style.height = `35px`;
+      buttonArr[i].setAttribute("id",`button${i}`);
+    }
+    //body onload할 때 게시판에 스크롤을 위치시킨다.
+    document.body.addEventListener("load",()=>{
+      window.scrollBy(0,100);
+    });
+    //select onchange 이벤트
+    select.addEventListener("change",()=>{
+     let index = select.selectedIndex;
+     let categoryOption = select.options[index].value;
+     switch(categoryOption){
+      case "전체": break;
+      case "기타": break;
+      case "개강OT": break;
+      case "취업특강": break;
+      default: break;
+     }
+    });
+    // 하단 버튼 클릭시 내용로 바뀌는 함수
+    function buttonClick(num){
+      //기존 내용 삭제
+      let preTable = null;
+      preTable = document.querySelector(`table`);
+      if(preTable !== null){
+        document.body.removeChild(preTable);
+      }else {
+        let mainSection = document.querySelector("#mainSection");
+        document.body.removeChild(mainSection);
+      }
+      //table 생성
+      let newTable = document.createElement("table");
+      newTable.innerHTML = `<thead><tr><td>번호</td><td>분류</td><td>제목</td><td>날짜</td></tr></thead>`;
+      //table 스타일
+      newTable.style.width = `80%`;
+      newTable.style.margin = `50px auto`;
+      newTable.style.textAlign = `center`;
+      newTable.style.borderCollapse = `collapse`;
+      newTable.style.fontSize = `13px`;
+      newTable.setAttribute("id",`table${num}`);
+      //table 추가
+      let footer = document.querySelector("#footer");
+      document.body.insertBefore(newTable,footer);
+      //thead 스타일
+      let thead = document.querySelector("thead");
+      thead.style.backgroundColor = `rgb(192, 219, 248)`;
+    }//end of buttonClick() func
+    // button1를 onclick했을 때 2번째 테이블 보이기
+    let button1 = document.querySelector("#button1");
+    button1.addEventListener("click",()=>{
+      buttonClick(1);
+      let table = document.querySelector("table");
+      for(let i=0;i<10;i++){
+        table.innerHTML += `<tr><td>${2346-i}</td><td>프로젝트</td><td>(디지털컨버전스)공공데이터 융합 자바개발자 양성과정A30_프로젝트 발표</td><td>2024.05.${15-i}</td></tr>`;
+      }
+      //tr,td 스타일
+      let trArr = document.querySelectorAll("tr");
+      for(let i=0;i<trArr.length;i++){
+        trArr[i].style.border = `1px solid rgb(218, 217, 217)`;
+        trArr[i].style.padding = `10px`;
+        trArr[i].setAttribute("id",`tr1${i}`);
+      }
+      trArr.forEach(e=>console.log(e));
+      let tdArr = document.querySelectorAll("td");
+      for(let i=0;i<tdArr.length;i++){
+        tdArr[i].style.border = `1px solid rgb(218, 217, 217)`;
+        tdArr[i].style.padding = `10px`;
+      }
+    });
+    // button2를 onclick했을 때 2번째 테이블 보이기
+    let button2 = document.querySelector("#button2");
+    button2.addEventListener("click",()=>{
+      buttonClick(2);
+      let table = document.querySelector("table");
+      for(let i=0;i<10;i++){
+        table.innerHTML += `<tr><td>${2336-i}</td><td>개강OT</td><td>(정보시스템구축)정보시스템 구축운영기반 정보보안 전문가 양성과정A23(1)_1회차_개강OT</td><td>2024.04.${20-i}</td></tr>`;
+      }
+      //tr,td 스타일
+      let trArr = document.querySelectorAll("tr");
+      for(let i=0;i<trArr.length;i++){
+        trArr[i].style.border = `1px solid rgb(218, 217, 217)`;
+        trArr[i].style.padding = `10px`;
+        trArr[i].setAttribute("id",`tr2${i}`);
+      }
+      let tdArr = document.querySelectorAll("td");
+      for(let i=0;i<tdArr.length;i++){
+        tdArr[i].style.border = `1px solid rgb(218, 217, 217)`;
+        tdArr[i].style.padding = `10px`;
+      }
+    });
+    // button3를 onclick했을 때 2번째 테이블 보이기
+    let button3 = document.querySelector("#button3");
+    button3.addEventListener("click",()=>{
+      buttonClick(3);
+      let table = document.querySelector("table");
+      for(let i=0;i<10;i++){
+        table.innerHTML += `<tr><td>${2326-i}</td><td>취업특강</td><td>(디지털컨버전스)공공데이터 융합 자바개발자 양성과정A30_취업특강</td><td>2024.03.${17-i}</td></tr>`;
+      }
+      //tr,td 스타일
+      let trArr = document.querySelectorAll("tr");
+      for(let i=0;i<trArr.length;i++){
+        trArr[i].style.border = `1px solid rgb(218, 217, 217)`;
+        trArr[i].style.padding = `10px`;
+        trArr[i].setAttribute("id",`tr3${i}`);
+      }
+      let tdArr = document.querySelectorAll("td");
+      for(let i=0;i<tdArr.length;i++){
+        tdArr[i].style.border = `1px solid rgb(218, 217, 217)`;
+        tdArr[i].style.padding = `10px`;
+      }
+    });
+    // button4를 onclick했을 때 2번째 테이블 보이기
+    let button4 = document.querySelector("#button4");
+    button4.addEventListener("click",()=>{
+      buttonClick(4);
+      let table = document.querySelector("table");
+      for(let i=0;i<10;i++){
+        table.innerHTML += `<tr><td>${2316-i}</td><td>기타</td><td>(디지털컨버전스)공공데이터 융합 자바개발자 양성과정A23_실무자 특강</td><td>2024.02.${24-i}</td></tr>`;
+      }
+      //tr,td 스타일
+      let trArr = document.querySelectorAll("tr");
+      for(let i=0;i<trArr.length;i++){
+        trArr[i].style.border = `1px solid rgb(218, 217, 217)`;
+        trArr[i].style.padding = `10px`;
+        trArr[i].setAttribute("id",`tr4${i}`);
+      }
+      let tdArr = document.querySelectorAll("td");
+      for(let i=0;i<tdArr.length;i++){
+        tdArr[i].style.border = `1px solid rgb(218, 217, 217)`;
+        tdArr[i].style.padding = `10px`;
+      }
+    });
+    //항목 클릭시 해당 항목으로 들어가기
+    let tr11 = document.querySelector("#tr11");
+    tr11.addEventListener("click",()=>{
+      console.log(tr11);
+      //기존테이블 제거
+      let table = document.querySelector("table");
+      document.body.removeChild(table);
+      //section 생성 추가
+      let footer = document.querySelector("#footer");
+      let newSection = document.createElement("section");
+      newSection.style.width = `80%`;
+      newSection.style.margin = `20px auto`;
+
+      newSection.setAttribute("id","mainSection");
+      document.body.insertBefore(newSection,footer);
+      //title 생성 추가
+      let newTitle = document.createElement("div");
+      newTitle.innerHTML = `(디지털컨버전스)공공데이터 융합 자바개발자 양성과정A30_프로젝트 발표 및 수료식`;
+      newTitle.style.margin = `0 auto`;
+      newTitle.style.borderTop = `2px solid black`;
+      newTitle.style.borderBottom = `1px solid black`;
+      newTitle.style.textAlign = `center`;
+      newTitle.style.fontSize = `15px`;
+      newTitle.style.padding = `20px 0`;
+      let mainSection = document.querySelector("#mainSection");
+      mainSection.appendChild(newTitle);
+      //imageDiv 생성 추가
+      let newImgDiv = document.createElement("div");
+      newImgDiv.style.backgroundImage = `url(../main/source/computer1.jpg)`;
+      newImgDiv.style.backgroundPosition = `center`;
+      newImgDiv.style.margin = `15px auto`;
+      newImgDiv.style.width = `600px`;
+      newImgDiv.style.height = `250px`;
+      mainSection.appendChild(newImgDiv);
+      //내용 생성 추가
+      let newP = document.createElement("p");
+      newP.innerHTML = `과정명 : (디지털컨버전스)공공데이터 융합 자바개발자 양성과정A30_프로젝트 발표<br>
+                        강사 : 김태근 선생님<br>
+                        날짜 : 2024.04.29<br>
+                        시간 : 9:00 ~ 13:00<br>
+                        강의실 : KH정보교육원 강남지원 1관 R강의실<br><br>
+                        KH정보교육원 프로젝트 발표 안내입니다.<br><br>
+                        프로젝트 발표회는 학생들이 공부했던 내용을 기반으로 기획하고 개발한 프로젝트를 시현하고 질의 응답을 통해 정보를 나누는 자리입니다.<br><br>
+                        프로젝트 발표회에는 KH정보교육원에서 공부하고 있는 학생이면 누구나 참관할 있으니 많은 관심 바랍니다.
+                        `;
+      newP.style.margin = `10 auto`;
+      newP.style.textAlign = `center`;
+      newP.style.fontSize = `14px`;
+      mainSection.appendChild(newP);
+    });
+  </script>
 </body>
 </html>

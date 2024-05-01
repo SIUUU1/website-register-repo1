@@ -5,7 +5,6 @@ function init(){
   userId.focus();
   window.scrollBy(0,200);
 }
-
 //아이디 입력할 때마다 점검
 function userIdCheck() {
   const userId = document.querySelector("#userId");
@@ -160,7 +159,6 @@ function searchPostCode() {
         //사용자가 지번주소를 선택했을 경우
         addr = data.jibunAddress;
       }
-
       //사용자가 선택한 주소가 도로명 타입일때 참고항목을 조합한다.
       if(data.userSelectedType === `R`){
         //법정동명이 있을 경우 추가한다.(법정리는 제외)
